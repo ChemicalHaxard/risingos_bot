@@ -52,14 +52,14 @@ async def make_post(bot, message):
 
     message_ = f"""
 #risingOS #TIRAMISU #ROM #{codename}
-risingOS v{version} | Official | Android 13
-<b>Supported Device:</b> {device} ({codename})
+RisingOS Official for {device} ({codename})
+<b>Version:</b> {version} | Android 13
 <b>Released:</b> {release_date}
-<b>Maintainer:</b> <a href=\"{telegram_url}\">{maintainer}</a>\n
-◾<b>Download:</b> <a href=\"{download_link}\">Here</a>
-◾<b>Screenshots:</b> <a href=\"https://t.me/riceDroidNews/719\">Here</a>
-◾<b>Changelogs:</b> <a href=\"{SOURCE_CHANGELOG}\">Source</a> | <a href=\"{DEVICE_CHANGELOG + codename + ".txt"}\">Device</a>
-◾<b>Support group:</b> <a href=\"https://t.me/riceDroidsupport\">Source</a> | <a href=\"{support_group}\">Device</a>\n\n"""
+<b>Maintainer:</b> <a href=\"{telegram_url}\">{maintainer}</a>
+<b>Download:</b> <a href=\"{download_link}\">Here</a>
+<b>Screenshots:</b> <a href=\"https://t.me/riceDroidNews/719\">Here</a>
+<b>Changelogs:</b> <a href=\"{SOURCE_CHANGELOG}\">Source</a> | <a href=\"{DEVICE_CHANGELOG + codename + ".txt"}\">Device</a>
+<b>Support group:</b> <a href=\"https://t.me/riceDroidsupport\">Rom</a> | <a href=\"{support_group}\">Device</a>\n\n"""
 
     if note := "\n  ".join(notes.get("notes", [])):
         message_ += f"<b>Notes:</b>\n  {note}\n\n"
